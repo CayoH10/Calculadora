@@ -10,6 +10,7 @@ class Calculator:
         return a * b 
 
     def divisao(a, b):
-        return a / b
-
+       if b == 0:
+           raise ValueError("Denominador não pode dividir por zero")
+       return a / b
 
